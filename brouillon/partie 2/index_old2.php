@@ -73,7 +73,7 @@
             }
               // l'entete du tabeau
               echo "
-              <table  style='border:solid 1px'>
+                <table  style='border:solid 1px'>
                       <tr>
                           <td style='width:50px'>id</td>
                           <td style='width:100px'>désignation</td>
