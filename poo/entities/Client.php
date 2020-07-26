@@ -1,5 +1,7 @@
 <?php
-    Class Client{
+
+    require_once '../model/FichierDB.php';
+    Class Client extends FichierDB{
         //atribut
         private $id;
         private $nom;
@@ -11,18 +13,18 @@
 
         public function setId($id){return $this->id = $id; }
         public function getId(){$this->id; }
-        public function __construct($id = null,$nom,$prenom,$telephone,$cni,$adresse = null,$salaire = null)
-        {
-            $this->id = $id;
-            $this->nom = $nom;
-            $this->prenom = $prenom;
-            $this->telephone = $telephone;
-            $this->cni = $cni;
-            $this->adresse = $adresse;
-            $this->salaire = $salaire;
-        }
+        // public function __construct($id = null,$nom,$prenom,$telephone,$cni,$adresse = null,$salaire = null)
+        // {
+        //     $this->id = $id;
+        //     $this->nom = $nom;
+        //     $this->prenom = $prenom;
+        //     $this->telephone = $telephone;
+        //     $this->cni = $cni;
+        //     $this->adresse = $adresse;
+        //     $this->salaire = $salaire;
+        // }
 
-        // public function __construct() { }
+        public function __construct() { }
 
         //setters & getters
 

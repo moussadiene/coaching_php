@@ -1,16 +1,23 @@
 <?php
-    class compte_epargne
+
+require_once '../model/FichierDB.php';
+
+    Class Epargne extends FichierDB
     {
+        private $numero;
         private $solde;
         private $fraisOuverture;
         private $remuneration;
         private $dateOuverture;
-        function __construct()//constructeur
-        {
-            //echo 'voici le constructeur
+        function __construct(){
+            parent::__construct();
         }
         //setters
 
+        public function setNumero($numero = null)
+        {
+            $this->numero = $numero;
+        }
         public function setSolde($solde)
         {
             $this->solde = $solde;
@@ -28,6 +35,10 @@
             $this->dateOuverture = $dateOuverture;
         }
         //getters
+        public function getNumero()
+        {
+            return $this->numero;
+        }
         public function getSolde()
         {
             return $this->solde;
